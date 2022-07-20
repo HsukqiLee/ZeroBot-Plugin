@@ -166,9 +166,9 @@ func init() {
 	w := flag.Bool("w", false, "Enable warning level log and higher.")
 	h := flag.Bool("h", false, "Display this help.")
 	// 直接写死 AccessToken 时，请更改下面第二个参数
-	token := flag.String("t", "chU6jni87YDB7hdk9PXh3", "Set AccessToken of WSClient.")
+	token := flag.String("t", "", "Set AccessToken of WSClient.")
 	// 直接写死 URL 时，请更改下面第二个参数
-	url := flag.String("u", "ws://127.0.0.1:4446", "Set Url of WSClient.")
+	url := flag.String("u", "", "Set Url of WSClient.")
 	// 默认昵称
 	adana := flag.String("n", "Champion", "Set default nickname.")
 	prefix := flag.String("p", "/", "Set command prefix.")
@@ -200,7 +200,7 @@ func init() {
 	}
 
 	// 通过代码写死的方式添加主人账号
-	sus = append(sus, 3152680003)
+	//sus = append(sus, 12345678)
 	// sus = append(sus, 87654321)
 
 	if *runcfg != "" {
